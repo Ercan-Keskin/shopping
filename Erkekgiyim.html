@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erkek Giyim</title>
+
+    <!--Font google-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Roboto+Mono:wght@100&display=swap"
+        rel="stylesheet">
+
+    <!--Simgeler-->
+    <link rel="stylesheet" href="style1.css">
+    <script src="https://kit.fontawesome.com/a317844617.js" crossorigin="anonymous"></script>
+
+    <!--Css ony-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+
+    <!--AOS kütüphanesi--->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+</head>
+
+<body>
+    
+
+    <nav class="erkeknav">
+        <div class="logo">
+            <a href="anasayfa.html"><img src="images/EKlogo.png" alt="anasayfalogo"></a>
+
+        </div>
+         
+
+        <ul>
+
+            <li>
+                <i class="fa-solid fa-house"></i>
+                <a href="anasayfa.html">Ana Sayfa</a>
+
+            </li>
+            <li>
+                <i class="fa-solid fa-mars"></i>
+                <a href="Erkekgiyim.html">Erkek Giyim</a>
+            </li>
+            <li>
+                <i class="fa-solid fa-venus"></i>
+                <a href="Kadıngiyim.html">Kadın Giyim</a>
+            </li>
+            <li>
+                <i class="fa-solid fa-bolt"></i>
+                <a href="Elektronik.html">Elektronik</a>
+            </li>
+        </ul>
+
+
+        <ul class="sag">
+
+            <li>
+                <i class="fa-solid fa-right-to-bracket"></i>
+                <a href="" id="girisYap" onclick="girisYap()">Giriş Yap</a>
+            </li>
+            <li>
+                <i class="fa-solid fa-user-plus"></i>
+                <a href="" id="kayitOl" onclick="kayitOl()" >Kayıt Ol</a>
+            </li>
+
+        </ul>
+    </nav>
+
+
+
+    <h2 class="h2-erkek">ERKEK GİYİM DÜNYASI</h2>
+    <hr>
+
+    <div class="erkek">
+
+        <div class="erkekurun1">
+            <h3 class="h3-erkek">Pantolon</h3>
+            <a href="images/pantolon.png" target="_blank">
+            <img class="urunler" src="images/pantolon.png" alt="" data-aos="flip-left" data-aos-duration="1000"></a>
+
+            <ul class="urunMadde">
+                <li>Ürün Adı : Mavi Jeans</li>
+                <li>Fiyat    : 400 TL</li>
+                <li>Taksit   : 5 Taksit</li>
+                <li>Kargo    : Ücretsiz </li>
+               
+                <label>Adet</label>
+                <input class="Adet" type="number" min="0" max="5" placeholder="*">
+                <label>Beden</label>
+                <select>
+                    <label>Beden Seçiniz</label>
+                    <option>30</option>
+                    <option>32</option>
+                    <option>34</option>
+                    <option>36</option>
+                    <option>44</option> 
+               </select>
+               <button class="buton" onclick="satınAl()">Satın Al</button>
+            </ul>
+        </div>
+
+
+        <div class="erkekurun2">
+            <h3 class="h3-erkek">T-Shirt</h3>
+            <a href="images/tişort.png" target="_blank">
+            <img class="urunler" src="images/tişort.png" alt="" data-aos="flip-left" data-aos-duration="1000"></a>
+            <ul class="urunMadde">
+                <li>Ürün Adı  : Coton</li>
+                <li>Fiyat     : 280 TL</li>
+                <li>Taksit    : 3 Taksit</li>
+                <li>Kargo     : Ücretsiz </li>
+
+
+                <label>Adet</label>
+                <input class="Adet" type="number" min="0" max="5" placeholder="*">
+                <label>Beden</label>
+                <select>
+                    <label>Beden Seçiniz</label>
+                    <option>S</option>
+                    <option>M</option>
+                    <option>L</option>
+                    <option>XL</option>
+                    <option>XXL</option> 
+               </select>
+               <button class="buton" onclick="satınAl()">Satın Al</button>
+
+
+            </ul>
+        </div>
+
+        <div class="erkekurun3">
+            <h3 class="h3-erkek">Sweatshirt</h3>
+            <a href="images/sweat.png" target="_blank">
+            <img class="urunler" src="images/sweat.png" alt="" data-aos="flip-left" data-aos-duration="1000"></a>
+            <ul class="urunMadde">
+                <li>Ürün Adı  : LCW</li>
+                <li>Fiyat     : 400 TL</li>
+                <li>Taksit    : 2 Taksit</li>
+                <li>Kargo     : Ücretsiz </li>
+
+                <label>Adet</label>
+                <input class="Adet" type="number" min="0" max="5" placeholder="*">
+                <label>Beden</label>
+                <select>
+                    <label>Beden Seçiniz</label>
+                    <option>S</option>
+                    <option>M</option>
+                    <option>L</option>
+                    <option>XL</option>
+                    <option>XXL</option> 
+               </select>
+               <button class="buton" onclick="satınAl()">Satın Al</button>
+            </ul>
+        </div>
+
+        <div class="erkekurun4">
+            <h3 class="h3-erkek">Mont</h3>
+            <a href="images/mont.png" target="_blank">
+            <img class="urunler" src="images/mont.png" alt="" data-aos="flip-left" data-aos-duration="1000"></a>
+            <ul class="urunMadde">
+                <li>Ürün Adı : Calvin Klein</li>
+                <li>Fiyat : 2200 TL</li>
+                <li>Taksit: 6 Taksit</li>
+                <li>Kargo : Ücretsiz </li>
+                <label>Adet</label>
+                <input class="Adet" type="number" name="adet" min="0" max="5" placeholder="*">
+                <label>Beden</label>
+                <select>
+                    <label>Beden Seçiniz</label>
+                    <option>S</option>
+                    <option>M</option>
+                    <option>L</option>
+                    <option>XL</option>
+                    <option>XXL</option> 
+               </select>
+               <button class="buton" onclick="satınAl()">Satın Al</button>
+        </div>
+               
+    </div>
+
+
+    <footer class="footer">
+
+        <div class="sol_alt">
+
+            <ul>
+                <li><a href="anasayfa.html">Ana Sayfa</a></li>
+                <li><a href="">Hakkımızda</a></li>
+                <li><a href="">İletişim</a></li>
+                <li><a href="" id="girisYap" onclick="girisYap()">Giriş Yap</a></li>
+                <li> <a href="" id="kayitOl" onclick="kayitOl()">Kayıt Ol</a></li>
+            </ul>
+
+            <p class="p">Tüm Hakları Saklıdır. Desiner by Ercan ©®</p>
+        </div>
+
+    </footer>
+    
+
+
+    <script>
+        function satınAl() {
+        alert("Siparişiniz Sepetinize Eklendi...");
+
+    }
+    function girisYap(girisYap) {
+                let isim = (prompt("Kullanıcı adınızı giriniz:"));
+                let sifre = Number(prompt("Şifrenizi giriniz:"));
+
+                if (isim == "ercan" & sifre == 12345) { // iban veya hesap numaraları bu ise kabul et demek
+
+                    alert("Hoş Geldiniz, Giriş başarılı.....");
+                }
+                else {
+                    alert("Lütfen bilgilerinizi kontrol ediniz.");
+                }
+            }
+
+            function kayitOl(kayitOl) {
+
+                let kullanıcıAdi = (prompt("Kullanıcı adı:"));
+                let sifre1 = Number(prompt("Şifrenizi giriniz:"));
+                let sifre2 = Number(prompt("Şifrenizi tekrarlayınız"));
+                let email = (prompt("e-mail adresinizi giriniz:"));
+
+
+                if (kullanıcıAdi == "ercan" & sifre1 == sifre2) { // iban veya hesap numaraları bu ise kabul et demek
+
+                    alert("E-Marketim'e Hoş Geldiniz. Kaydınız oluşturuldu.");
+                }
+
+                else {
+                    alert("Girdiğiniz şifreler aynı değil. Lütfen kontrol ediniz.");
+                }
+
+                
+
+            }
+        AOS.init();
+    </script>
+
+    <div class="wp">
+        <a href="https://wa.me/90534" target="_blank">
+            <img src="images/wplogo.png" alt="wplogo">
+        </a>
+    </div>
+
+
+
+
+
+
+
+
+</body>
+
+</html>

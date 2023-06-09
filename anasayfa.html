@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Marketim</title>
+    <!--Font google-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Roboto+Mono:wght@100&display=swap"
+        rel="stylesheet">
+
+
+    <link rel="stylesheet" href="style1.css">
+    <!--Simgeler-->
+    <!--Aşağıdaki internet olunca simgeleri gösterir--->
+    <!---<script src="https://kit.fontawesome.com/a317844617.js" crossorigin="anonymous"></script> --->
+
+    <!--Aşağıdaki ise internet olmadan kaynak dosyası olduğu için internet olmasada simgeler gelir-->
+
+    <script src="js/a317844617.js" crossorigin="anonymous"></script>
+
+    <!--AOS kütüphanesi--->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+
+</head>
+
+<body>
+    
+    <div class="container">
+
+
+        <nav>
+
+            <div class="logo">
+                <a href="anasayfa.html"><img src="images/EKlogo.png" alt="anasayfalogo">
+                </a>
+
+            </div>
+            <h3 class="marka">
+                <ul>E-MARKETİM</ul>
+            </h3>
+            <ul>
+
+                <li>
+                    <i class="fa-solid fa-house"></i>
+                    <a href="anasayfa.html">Ana Sayfa</a>
+
+                </li>
+                <li>
+                    <i class="fa-solid fa-mars"></i>
+                    <a href="Erkekgiyim.html">Erkek Giyim</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-venus"></i>
+                    <a href="Kadıngiyim.html">Kadın Giyim</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-bolt"></i>
+                    <a href="Elektronik.html">Elektronik</a>
+                </li>
+            </ul>
+
+
+            <ul class="sag">
+
+                <li>
+                    <i class="fa-solid fa-right-to-bracket"></i>
+                    <a href="" id="girisYap" onclick="girisYap()">Giriş Yap</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-user-plus"></i>
+                    <a href="" id="kayitOl" onclick="kayitOl()">Kayıt Ol</a>
+                </li>
+            </ul>
+
+        </nav>
+        <!------Ana sayfa ortasındaki kategoriler------------>
+        <div class="content">
+            <h1>E-Marketim' e </h1>
+            <h2>Hoş Geldiniz! Keyifli Alışverişler...</h2>
+            <button class="ana-button"><a href="Erkekgiyim.html">Erkek Giyim</a></button>
+            <button class="ana-button"><a href="Kadıngiyim.html">Kadın Giyim</a></button>
+            <button class="ana-button"><a href="Elektronik.html">Elektronik</a></button>
+        </div>
+        <!--------------------------------------------------->
+
+        <div class="anaekran">
+            <img src="images/arkaplan.jpg" alt="arkaplan">
+        </div>
+
+
+
+        <footer class="footer">
+
+
+            <div class="sol_alt">
+
+                <ul>
+                    <li><a href="anasayfa.html">Ana Sayfa</a></li>
+                    <li><a href="hakkimizda.html">Hakkımızda</a></li>
+                    <li><a href="iletisim.html">İletişim</a></li>
+                    <li><a href="" id="girisYap" onclick="girisYap()">Giriş Yap</a></li>
+                    <li> <a href="" id="kayitOl" onclick="kayitOl()">Kayıt Ol</a></li>
+                </ul>
+
+                <pre class="p">Tüm Hakları Saklıdır. Desinger by Ercan-Keskin ©®</pre>
+            </div>
+
+
+
+
+        </footer>
+
+
+        <!-------Giriş ve Kayıt ol butonu ayarları-------------->
+        <script>
+            
+            function girisYap(girisYap) {
+                let isim = (prompt("Kullanıcı adınızı giriniz:"));
+                let sifre = Number(prompt("Şifrenizi giriniz:"));
+
+                if (isim == "isim" & sifre == 12345) {
+
+                    alert("Hoş Geldiniz, Giriş başarılı.....");
+                }
+                else {
+                    alert("Lütfen bilgilerinizi kontrol ediniz.");
+                }
+            }
+
+            function kayitOl(kayitOl) {
+
+                let kullanıcıAdi = (prompt("Kullanıcı adı:"));
+                let sifre1 = Number(prompt("Şifrenizi giriniz:"));
+                let sifre2 = Number(prompt("Şifrenizi tekrarlayınız"));
+                let email = (prompt("e-mail adresinizi giriniz:"));
+
+
+                if (kullanıcıAdi == "isim" & sifre1 == sifre2) { // şifre ve ya kullanıcı adı bu ise kabul et demek
+
+                    alert("E-Marketim'e Hoş Geldiniz. Kaydınız oluşturuldu.");
+                }
+
+                else {
+                    alert("Girdiğiniz şifreler aynı değil. Lütfen kontrol ediniz.");
+                }
+
+                
+
+            }
+
+
+            AOS.init();
+        </script>
+
+
+
+        <div class="wp">
+            <a href="https://wa.me/90534" target="_blank">
+                <img src="images/wplogo.png" alt="wplogo">
+            </a>
+        </div>
+    </div>
+</body>
+
+</html>

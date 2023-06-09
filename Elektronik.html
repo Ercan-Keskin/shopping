@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elektronik Eşyalar</title>
+
+    <!--Font google-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Roboto+Mono:wght@100&display=swap"
+        rel="stylesheet">
+
+    <!--Simgeler-->
+    <link rel="stylesheet" href="style1.css">
+    <script src="https://kit.fontawesome.com/a317844617.js" crossorigin="anonymous"></script>
+
+    <!--Css ony-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+
+    <!--AOS kütüphanesi--->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+</head>
+
+<body>
+
+
+    <nav class="elektronikNav">
+        <div class="logo">
+            <a href="anasayfa.html"><img src="images/EKlogo.png" alt="anasayfalogo"></a>
+
+        </div>
+
+
+        <ul>
+
+            <li>
+                <i class="fa-solid fa-house"></i>
+                <a href="anasayfa.html">Ana Sayfa</a>
+
+            </li>
+            <li>
+                <i class="fa-solid fa-mars"></i>
+                <a href="Erkekgiyim.html">Erkek Giyim</a>
+            </li>
+            <li>
+                <i class="fa-solid fa-venus"></i>
+                <a href="Kadıngiyim.html">Kadın Giyim</a>
+            </li>
+            <li>
+                <i class="fa-solid fa-bolt"></i>
+                <a href="Elektronik.html">Elektronik</a>
+            </li>
+        </ul>
+
+
+        <ul class="sag">
+
+            <li>
+                <i class="fa-solid fa-right-to-bracket"></i>
+                <a href="" id="girisYap" onclick="girisYap()">Giriş Yap</a>
+            </li>
+            <li>
+                <i class="fa-solid fa-user-plus"></i>
+                <a href="" id="kayitOl" onclick="kayitOl()">Kayıt Ol</a>
+            </li>
+
+        </ul>
+    </nav>
+
+
+
+    <h2 class="h2-elektronik">ELEKTRONİK EŞYALAR</h2>
+    <hr>
+
+    <div class="elektronik">
+
+        <div class="elektronik-urun1">
+            <h3 class="h3-elektronik">Elektronik Süpürge</h3>
+            <a href="images/dyson.jpeg" target="_blank">
+                <img class="urunler" src="images/dyson.jpeg" alt=""></a>
+
+            <ul class="urunMadde">
+                <li>Ürün Adı : Dyson</li>
+                <li>Fiyat : 12.500 TL</li>
+                <li>Taksit : 4 Taksit</li>
+                <li>Kargo : Ücretsiz </li>
+                <li>Garanti : 2 YIL </li>
+
+                <label>Adet</label>
+                <input class="Adet" type="number" min="0" max="5" placeholder="*">
+                <button class="buton" onclick="satınAl()">Satın Al</button>
+            </ul>
+
+        </div>
+
+        <iframe class="video" width="700" height="500" src="https://www.youtube.com/embed/55ByOUMKGnE"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+
+
+    </div>
+
+
+    <footer class="footer-elektronik">
+
+        <div class="sol_alt">
+
+            <ul>
+                <li><a href="anasayfa.html">Ana Sayfa</a></li>
+                <li><a href="hakkimizda.html">Hakkımızda</a></li>
+                <li><a href="iletisim.html">İletişim</a></li>
+                <li><a href="" id="girisYap" onclick="girisYap()">Giriş Yap</a></li>
+                <li> <a href="" id="kayitOl" onclick="kayitOl()">Kayıt Ol</a></li>
+            </ul>
+
+            <p class="p">Tüm Hakları Saklıdır. Desinger by Ercan ©®</p>
+        </div>
+
+    </footer>
+
+
+
+    <script>
+        function satınAl() {
+            alert("Siparişiniz Sepetinize Eklendi...");
+
+        }
+        function girisYap(girisYap) {
+                let isim = (prompt("Kullanıcı adınızı giriniz:"));
+                let sifre = Number(prompt("Şifrenizi giriniz:"));
+
+                if (isim == "ercan" & sifre == 12345) { // iban veya hesap numaraları bu ise kabul et demek
+
+                    alert("Hoş Geldiniz, Giriş başarılı.....");
+                }
+                else {
+                    alert("Lütfen bilgilerinizi kontrol ediniz.");
+                }
+            }
+
+            function kayitOl(kayitOl) {
+
+                let kullanıcıAdi = (prompt("Kullanıcı adı:"));
+                let sifre1 = Number(prompt("Şifrenizi giriniz:"));
+                let sifre2 = Number(prompt("Şifrenizi tekrarlayınız"));
+                let email = (prompt("e-mail adresinizi giriniz:"));
+
+
+                if (kullanıcıAdi == "ercan" & sifre1 == sifre2) { // iban veya hesap numaraları bu ise kabul et demek
+
+                    alert("E-Marketim'e Hoş Geldiniz. Kaydınız oluşturuldu.");
+                }
+
+                else {
+                    alert("Girdiğiniz şifreler aynı değil. Lütfen kontrol ediniz.");
+                }
+
+                
+
+            }
+        AOS.init();
+    </script>
+
+    <div class="wp">
+        <a href="https://wa.me/90534" target="_blank">
+            <img src="images/wplogo.png" alt="wplogo">
+        </a>
+    </div>
+
+
+
+
+
+
+
+
+</body>
+
+</html>

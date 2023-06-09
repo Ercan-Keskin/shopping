@@ -1,0 +1,703 @@
+html,
+body {
+   margin: 0;
+   padding: 0;
+   width: 100%;
+   height: 100%;
+
+}
+
+* {
+   box-sizing: border-box;
+   font-family: "Poppins", sans-serif;
+}
+
+
+
+img {
+   margin: 0px 0px -7px 0px;
+   width: 100%;
+   height: 100%;
+   background-size: 100% 100%;
+   background-repeat: no-repeat;
+
+
+}
+
+/*Ana sayfa Hoşgeldin ayarları*/
+.content {
+   width: 100%;
+   position: absolute;
+   /*Sayfanın kenarlarına göre hızalama*/
+   top: 30%;
+   text-align: center;
+   right: 20%;
+}
+
+.content h1 {
+
+   font-size: 50px;
+
+}
+
+.content h2 {
+
+   margin: 10px;
+
+}
+
+.logo {
+   display: inline-block;
+   margin-top: 10px;
+   margin-left: 5px;
+   width: 55px;
+   height: 55px;
+}
+
+.ana-button {
+   width: 200px;
+   padding: 15px;
+   margin-top: 20px;
+   margin-left: 20px;
+   border-radius: 40px;
+   text-align: center;
+   background-color: slateblue;
+
+}
+
+.ana-button a {
+
+   text-decoration: none;
+   color: black;
+   font-size: 17px;
+   font-weight: bolder;
+
+}
+
+.ana-button a:hover {
+
+
+   color: white;
+
+}
+
+.ana-button:hover {
+
+   transition: 1s;
+   box-shadow: 5px 10px orange;
+}
+
+/****************************************/
+
+.content-50 h1 {
+
+   padding: 0;
+   margin-top: 0;
+   margin-left: 50%;
+
+}
+
+.harita {
+   padding: 0;
+   margin-top: 0;
+   margin-left: 50%;
+}
+
+
+
+.marka {
+
+   margin: 00px;
+   color: black
+}
+
+/***********NAV BAR AYARLARI****************/
+nav {
+
+   background-color: chocolate;
+   display: flex;
+   /* boşluksuz yanyana getirdim*/
+
+   height: 70px;
+
+}
+
+nav:hover {
+
+   width: 100%;
+   background-image: linear-gradient(to right, deepskyblue, aqua, grey, orangered);
+   animation: animasyon_nav_bar 1s infinite alternate;
+   background-size: 300%;
+
+}
+
+
+
+
+/*Nav barın animasyonu*/
+@keyframes animasyon_nav_bar {
+
+   from {
+
+      background-position: 0;
+
+   }
+
+   to {
+
+      background-position: 100%;
+   }
+}
+
+
+nav ul {
+   margin: 5px;
+   padding: 20px;
+}
+
+nav ul li {
+
+   display: inline;
+   list-style-type: none;
+   /*listelerin noktaları sıfırlandı*/
+   margin: 20px;
+   padding: 5px;
+   color: white;
+
+}
+
+nav ul li a {
+   text-decoration: none;
+   /*yazıların altlarındaki link çizgileri sıfırlandı*/
+   font-size: 15px;
+   font-weight: bolder;
+   color: black;
+   margin: 10px;
+   padding: 10px;
+
+}
+
+
+nav ul li a:hover {
+
+
+   font-size: 16px;
+   color: white;
+   transition: 0.5s ease;
+
+}
+
+
+/************FOOTER ALT BAR**********/
+
+footer {
+
+   margin: 0px;
+   width: 100%;
+   height: 150px;
+   background-image: linear-gradient(to right, yellow, orangered);
+   display: flex;
+   justify-content: center;
+
+}
+
+
+.sol_alt ul {
+   display: flex;
+   list-style-type: none;
+   margin: 20px;
+}
+
+.sol_alt ul li a {
+   text-decoration: none;
+   margin: 20px;
+   padding: 80px;
+   font-size: 17px;
+   font-weight: bold;
+   color: black;
+   text-shadow: 1px 1px purple;
+}
+
+.sol_alt ul li a:hover {
+
+   color: aquamarine;
+}
+
+
+
+.wp {
+
+   position: fixed;
+   bottom: 20px;
+   right: 20px;
+
+
+}
+
+.wp img {
+
+   width: 50px;
+   height: 50px;
+}
+
+.p {
+
+   margin-top: 50px;
+   text-align: center;
+}
+
+
+/*******Satın Alma Butonu Ayarları***************/
+.buton {
+   display: flex;
+   margin-left: 120px;
+   margin-top: 30px;
+   background-color: bisque;
+   border-radius: 10px;
+   font-size: large;
+
+}
+
+.buton:hover {
+
+   transform: scale(1.1);
+   cursor: pointer;
+}
+
+/***************ERKEK GİYİM*********************/
+
+
+.erkeknav {
+
+   background-image: linear-gradient(to right, aqua, orangered);
+   height: 70px;
+
+}
+
+.erkeknav:hover {
+
+   width: 100%;
+   background-image: linear-gradient(to right, to right, aqua, orangered);
+   animation: animasyon_nav_bar 1s infinite alternate;
+   background-size: 300%;
+
+}
+
+.h2-erkek {
+
+   text-align: center;
+   margin-top: 30px;
+   font-weight: bold;
+}
+
+.h3-erkek {
+   /*Erkek kategori başlığı*/
+
+   text-align: center;
+   font-size: xx-large;
+
+
+}
+
+.erkek {
+   /*divlerin ayarlamaları*/
+
+   margin-top: 50px;
+   margin-left: 50px;
+}
+
+.erkekurun1 {
+
+   width: 300px;
+   height: 100%;
+   margin: 20px;
+   float: left;
+
+
+}
+
+.erkekurun2 {
+
+   width: 300px;
+   height: 100%;
+   margin: 20px;
+   float: left;
+}
+
+.erkekurun3 {
+
+   width: 300px;
+   height: 100%;
+   margin: 20px;
+   float: left;
+}
+
+.erkekurun4 {
+
+   width: 300px;
+   height: 100%;
+   margin: 20px;
+   float: left;
+}
+
+/*Eklenen ürünlerin Fotoları*/
+.urunler {
+   display: block;
+   margin-left: auto;
+   /* ortalama yaptım*/
+   margin-right: auto;
+   margin-top: 5px;
+   width: 285px;
+   height: 300px;
+
+}
+
+.urunler:hover {
+
+   transform: scale(1.1);
+   cursor: pointer;
+}
+
+.urunMadde {
+
+   width: 300px;
+   height: 200px;
+   margin: 20px;
+   padding: 10px;
+   text-align: center;
+   font-weight: bold;
+   text-decoration: none;
+
+   list-style: none;
+
+}
+
+.urunMadde li {
+
+   padding: 2px;
+}
+
+.urunler:hover {
+   box-shadow: 10px 10px 10px bisque;
+
+}
+
+
+.Adet {
+
+   width: 50px;
+}
+
+
+
+
+/******KADIN GİYİM*******/
+
+
+.kadınnav {
+
+   background-image: linear-gradient(to right, pink, purple);
+   height: 70px;
+
+}
+
+.kadınnav:hover {
+
+   width: 100%;
+   background-image: linear-gradient(to right, pink, purple);
+   animation: animasyon_nav_bar 1s infinite alternate;
+   background-size: 300%;
+
+}
+
+.h2-kadın {
+
+   text-align: center;
+   margin-top: 30px;
+   font-weight: bold;
+}
+
+.h3-kadın {
+   /*kadın kategori başlığı*/
+
+   text-align: center;
+   font-size: xx-large;
+
+
+}
+
+.kadın {
+   /*divlerin ayarlamaları*/
+
+   margin-top: 50px;
+   margin-left: 100px;
+
+}
+
+.kadınurun1 {
+
+   width: 300px;
+   height: 100%;
+   margin: 20px;
+   float: left;
+
+
+}
+
+.kadınurun2 {
+
+   width: 300px;
+   height: 100%;
+   margin: 20px;
+   float: left;
+}
+
+.kadınurun3 {
+
+   width: 300px;
+   height: 100%;
+   margin: 20px;
+   float: left;
+}
+
+.kadınurun4 {
+
+   width: 300px;
+   height: 100%;
+   margin: 20px;
+   float: left;
+}
+
+.kadınurun5 {
+
+   width: 50%;
+   float: left;
+
+
+}
+
+.urunMadde5 {
+
+   width: 300px;
+   height: 200px;
+   margin-left: 220px;
+   padding: 10px;
+   text-align: center;
+   font-weight: bold;
+   text-decoration: none;
+   list-style: none;
+
+}
+
+.kadınurun6 {
+
+   width: 50%;
+   float: left;
+
+
+}
+
+.urunMadde6 {
+
+   width: 300px;
+   height: 200px;
+   margin-left: 220px;
+   padding: 10px;
+   text-align: center;
+   font-weight: bold;
+   text-decoration: none;
+   list-style: none;
+
+}
+
+/*FOOTER KADIN*/
+
+.footer-kadin {
+
+   background-image: linear-gradient(to right, rgb(134, 0, 236), purple);
+}
+
+/*Eklenen ürünlerin Fotoları*/
+.urunler {
+   display: block;
+   margin-left: auto;
+   /* ortalama yaptım*/
+   margin-right: auto;
+   margin-top: 5px;
+   width: 285px;
+   height: 300px;
+
+}
+
+.urunler:hover {
+
+   transform: scale(1.1);
+   cursor: pointer;
+}
+
+
+.urunMadde {
+
+   width: 300px;
+   height: 200px;
+   margin: 20px;
+   padding: 10px;
+   text-align: center;
+   font-weight: bold;
+   text-decoration: none;
+   list-style: none;
+
+}
+
+.urunMadde li {
+
+   padding: 2px;
+}
+
+.Adet {
+
+   width: 50px;
+}
+
+
+
+
+/******ELEKTRONİK EŞYALAR*********/
+
+
+.elektronikNav {
+
+   background-image: linear-gradient(to right, grey, blue, grey);
+   height: 70px;
+
+}
+
+.elektronikNav:hover {
+
+   width: 100%;
+   background-image: linear-gradient(to right, grey, blue, grey);
+   animation: animasyon_nav_bar 1s infinite alternate;
+   background-size: 300%;
+
+}
+
+.h2-elektronik {
+
+   text-align: center;
+   margin-top: 30px;
+   font-weight: bold;
+}
+
+.h3-elektronik {
+   /*Elektronik kategori başlığı*/
+
+   text-align: center;
+   font-size: xx-large;
+
+
+}
+
+.elektronik {
+   /*divlerin ayarlamaları*/
+
+
+   margin-top: 30px;
+   margin-left: 150px;
+   display: inline;
+
+}
+
+.elektronik-urun1 {
+
+
+   height: 100%;
+   margin: 100px;
+   float: left;
+
+}
+
+.video {
+   margin: 120px 30px;
+
+}
+
+
+
+/*Eklenen ürünlerin Fotoları*/
+.urunler {
+   display: block;
+   margin-left: auto;
+   /* ortalama yaptım*/
+   margin-right: auto;
+   margin-top: 5px;
+   width: 285px;
+   height: 300px;
+
+}
+
+.urunler:hover {
+
+   transform: scale(1.1);
+   cursor: pointer;
+}
+
+.urunMadde {
+
+   width: 300px;
+   height: 200px;
+   margin: 20px;
+   padding: 10px;
+   text-align: center;
+   font-weight: bold;
+   text-decoration: none;
+
+   list-style: none;
+
+}
+
+.urunMadde li {
+
+   padding: 2px;
+}
+
+.Adet {
+
+   width: 50px;
+}
+
+/*Elektronik Footer*/
+.footer-elektronik {
+   background-image: linear-gradient(to right, grey, blue, grey)
+}
+
+
+.content-hakkimizda {
+   width: 100%;
+   position: absolute;
+   /*Sayfanın kenarlarına göre hızalama*/
+   top: 30%;
+   text-align: center;
+
+}
+
+.content-hakkimizda h1 {
+
+   font-size: 50px;
+
+
+}
+
+.content-hakkimizda h2 {
+
+   margin: center;
+
+}
+
+.content-hakkimizda:hover {
+
+
+   background-image: linear-gradient(to right, rgba(252, 252, 252, 0.178), rgba(255, 128, 0, 0.426), rgba(252, 252, 252, 0.178));
+
+
+}
+
